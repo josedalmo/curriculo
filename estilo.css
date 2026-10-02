@@ -1,0 +1,373 @@
+html{
+scroll-behavior: 5;
+}
+
+
+
+body{
+margin: none;
+background-color: rgb(215, 238, 252);
+color: rgb(0, 0, 0);
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+align-content: center;
+text-align:center
+}
+
+.secao{
+    /* max-width: 1000px; */
+margin: 0 auto;
+padding: 70px 40px;
+/* box-shadow: 1px 1px 7px rgb(55, 93, 214); */
+border-radius: 7px;
+margin-left: 15%;
+
+}
+
+
+.Inicio{
+    /*altura minima*/
+    min-height: 8dvb;
+    display: flex;
+   align-items:center;
+   justify-content: center;
+    gap: 40px;
+
+}
+
+img{
+border-radius: 45px;
+width: 150px;
+border: 1px solid rgb(5, 144, 236);
+/*box-shadow: 2px 5px 5px rgb(13, 142, 216);*/
+}
+
+.Inicio h2{
+font-size: 60px;
+font-family: "Audiowide", sans-serif;
+}
+    .btn{
+        display: inline-block;
+        padding: 13px 8px;
+        border: 1px solid black;
+        border-radius: 8px;
+        font-weight: bold;
+        color: black;
+        text-decoration: none;
+    }
+
+    .btn-principal{
+        background-color: black; color: aliceblue;
+    }
+    /*configurando secao sobre*/
+    .fundo{
+background-color: rgb(165, 203, 247);
+       /*sem largura*/
+      max-width: none;
+      margin-left: 200px;
+    }
+
+    .sobre{
+     display: flex;
+     gap: 100px;
+     justify-content: center;
+     
+    }
+
+    .sobre p {
+width: 10%;
+    }
+    .lista-inf{
+        background: #96d4fd;
+        border-left: 4px solid rgb(127, 181, 231);
+     padding: 40px;
+     list-style: none;
+    }
+
+.lista-inf li { 
+    
+    margin-bottom: 10px;}
+
+/*personalizando expericia*/
+.cartao{
+margin-bottom: 18px;
+/*criar bordas*/
+padding: 24px;
+border: 1px solid rgb(0, 24, 100);
+border-radius: 10px;
+background: rgb(163, 195, 243);
+/*sombra*/
+/* box-shadow: 2px 2px 10px rgb(76, 76, 247);*/
+padding: 20px;
+}
+
+.cartao h3{
+
+margin-bottom: 50px;
+}
+
+
+.data{
+
+color: #04141f;
+font-weight: bold;
+}
+
+
+.empresa{
+color: #012842;
+}
+
+
+.grade-cartao{
+display: grid;
+/*quantas colunas você quer?*/
+grid-template-columns: 1fr 2fr;
+/*espaçamento*/
+gap: 20px;
+
+}
+
+.lista-habilidades{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+gap: 20px;
+}
+
+
+.lista-habilidades li{
+
+display: flex;
+background: rgb(228, 233, 253);
+padding: 20px;
+border: 1px solid rgb(72, 173, 255);
+border-radius: 13px;
+gap: 2px;
+}
+
+.lista-habilidades li:hover{
+scale: 1.1;
+transition: 1s;
+background-color: black;
+color: azure;
+
+}
+.cartao:hover{
+scale:1x1;
+transition: 1s;
+background-color: rgb(136, 212, 255);
+}
+
+/*personalizando redes*/
+.grade-redes{
+    display: grid;
+padding: 20px;
+grid-template-columns: 2fr 2fr 2fr;
+gap: 15px;
+margin-top: 30px;
+}
+
+.grade-redes a{
+padding: 20px;
+text-decoration: none;
+color: black;
+border: 1px solid black;
+border-radius: 8px;
+background-color: rgb(222, 228, 255);
+font-weight: bold;
+text-align: center;
+
+}
+
+
+.grade-redes a i {font-size: 40px;}
+
+
+
+#face{color: rgb(2, 48, 255);}
+#insta{color:rgb(252, 16, 181)}
+#linkedin{color: rgb(0, 136, 255);}
+#git{color: black;}
+#zap{color: rgb(3, 197, 3);}
+
+
+
+.grade-redes a:hover{
+box-shadow: 2px 2px 10px rgb(241, 159, 159);
+scale: 1.1;
+transition: 1s;
+}
+
+.lista-contato{
+list-style: none;
+padding: 0;
+}
+
+.lista-contato li{
+    margin-bottom: 12px;
+    font-size: 28px;
+}
+
+.lista-contato{
+color: green;
+}
+
+footer{
+padding: 20px;
+background-color: rgb(37, 0, 170);
+color: white;
+text-align: center;
+}
+
+.menu-lateral{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    /*pegar toda a altura da tela - VH */
+    height: 100vh;
+    padding: 32px 24px;
+    background: #b7d6fa;
+color: rgb(0, 0, 0);
+}
+
+.perfil{
+text-align: center;
+margin-bottom: 35px;
+}
+
+.avatar{
+width: 85px;
+height: 85px;
+color: rgb(39, 111, 133);
+border: 3px solid rgb(95, 170, 255);
+border-radius: 20px;
+margin: auto;
+font-size:28px ;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.lista-menu{
+padding: 0;
+list-style: none;
+
+}
+
+.lista-menu a{
+color: aliceblue;
+text-decoration: none;
+display: block;
+margin-bottom: 8px;
+padding: 12px;
+border-radius: 8px;
+}
+.lista-menu a:hover{
+background-color: #68a2f8;
+color: #04141f;
+transform: translatex(20px);
+transition: 1s;
+}
+
+.lista-Menu i {
+    font-size: 25px;
+    margin-right: 30px;
+}
+
+.botao-menu, .fundo-menu{
+display: none;
+}
+
+
+.whats{
+width: 64px;
+height: 64px;
+position: fixed;
+right: 24px;
+bottom: 24px;
+font-size: 50px;
+text-decoration: none;
+color: rgb(1, 230, 58);
+
+}
+
+
+.whats:hover{
+color: green;
+transform: scale(1.01);
+transition: 1s;
+}
+
+
+/*modo celular abaixo*/
+@media(max-width:1080px){
+
+.botao-Menu{
+/*aparecer o icone do menu*/
+display: block;
+position: fixed;
+right: 15px;
+top: 15px;
+padding: 12px 15px;
+border: none;
+background: black;
+color: white;
+font-size: 20px;
+border-radius: 10px;
+z-index: 5;
+}
+
+.menu-lateral{
+    transform: translateX(-1000%);
+    transition: 0,5s;
+    z-index: 2; 
+}
+
+/*classe irá fazer o menu aparecer na tela*/
+
+ 
+.menu-lateral.aberto{
+transform: translateX(0);
+}
+
+.fundo-menu.vísivel{
+display: block;
+position: fixed;
+inset: 0;
+background: #00000010;
+}
+
+.fundo{
+margin: 0;
+}
+    .Inicio{
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+    text-align: center;
+}
+
+.Inicio h2{
+font-size: 30px;
+}
+
+.sobre{
+flex-direction: column;
+}
+
+.sobre p{
+    width: 100%;
+}
+.grade-cartao{
+    grid-template-columns: 1fr;
+}
+.lista-habilidades{
+    grid-template-columns: 1fr ;
+   margin-left: -60px;
+}
+
+.grade-redes{
+grid-template-columns: 1fr 1fr;
+}
+.secao{padding: 40px; margin: 0;}
+}
